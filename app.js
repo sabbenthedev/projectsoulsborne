@@ -12,17 +12,29 @@ let isPlayingOnce = false;
 
 // animations
 const knightSheets = {
-    idle: document.getElementById("knight_idle"),
-    crouch: document.getElementById("knight_crouch"),
-    attack1: document.getElementById("knight_attack1_nomovement"),
-    attack2: document.getElementById("knight_attack2_nomovement"),
-    combo: document.getElementById("knight_combo_nomovement"),
-    jump: document.getElementById("knight_jumpfall"),
-    slide: document.getElementById("knight_slide"),
-    death: document.getElementById("knight_death"),
-    run: document.getElementById("knight_run"),
-    roll: document.getElementById("knight_roll"),
+    idle: new Image(),
+    crouch: new Image(),
+    attack1: new Image(),
+    attack2: new Image(),
+    combo: new Image(),
+    jump: new Image(),
+    slide: new Image(),
+    death: new Image(),
+    run: new Image(),
+    roll: new Image(),
 };
+
+// set image sources
+knightSheets.idle.src = "./knight/_Idle.png";
+knightSheets.crouch.src = "./knight/_CrouchFull.png";
+knightSheets.attack1.src = "./knight/_AttackNoMovement.png";
+knightSheets.attack2.src = "./knight/_Attack2NoMovement.png";
+knightSheets.combo.src = "./knight/_AttackComboNoMovement.png";
+knightSheets.jump.src = "./knight/_JumpFallInbetween.png";
+knightSheets.slide.src = "./knight/_SlideFull.png";
+knightSheets.death.src = "./knight/_DeathNoMovement.png";
+knightSheets.run.src = "./knight/_Run.png";
+knightSheets.roll.src = "./knight/_Roll.png";
 
 const animationStates = [
     { name: "idle", frames: 10, stagger: 16 },
@@ -88,4 +100,16 @@ function animate() {
 
     requestAnimationFrame(animate);
 }
-animate();
+
+// load images before starting animation
+let imagesLoaded = 0;
+const totalImages = Object.keys(knightSheets).length;
+
+for (let key in knightSheets) {
+    knightSheets[key].onload = () => {
+        imagesLoaded++;
+        if (imagesLoaded === totalImages) {
+            animate();
+        }
+    };
+}
