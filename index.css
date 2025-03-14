@@ -1,0 +1,37 @@
+body {
+  background-color: black;
+}
+
+#myCanvas{
+  background: gray;
+  border: 5px solid black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 778px;
+  height: 625px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.button {
+  padding: 10px 30px;
+  background-color: black;
+  color: white;
+  transform: translate(520px, 50px);
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+  border-radius: 20px;
+  transition: 0.7s ease-in-out;
+}
+
+.button:hover {
+  background-color: red;
+}
+

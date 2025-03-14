@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Knight Animations</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+
+    <canvas id="myCanvas">
+      <img src="knight/_Idle.png" alt="" id="knight_idle">
+      <img src="knight/_CrouchFull.png" alt="" id="knight_crouch">
+      <img src="knight/_AttackNoMovement.png" alt="" id="knight_attack1_nomovement">
+      <img src="knight/_Attack2NoMovement.png" alt="" id="knight_attack2_nomovement">
+      <img src="knight/_AttackComboNoMovement.png" alt="" id="knight_combo_nomovement">
+      <img src="knight/_JumpFallInbetween.png" alt="" id="knight_jumpfall">
+      <img src="knight/_SlideFull.png" alt="" id="knight_slide">
+      <img src="knight/_DeathNoMovement.png" alt="" id="knight_death">
+      <img src="knight/_Run.png" alt="" id="knight_run">
+      <img src="knight/_Roll.png" alt="" id="knight_roll">
+    </canvas>
+
+    <div class="buttons">
+        <button class="button" value="attack1">attack 1</button>
+        <button class="button" value="attack2">attack 2</button>
+        <button class="button" value="combo">combo</button>
+        <button class="button" value="death">death</button>
+        <button class="button" value="run">run</button>
+        <button class="button" value="roll">roll</button>
+    </div>
+
+    <script type="module" src="./app.js"></script>
+
+  </body>
+</html>
