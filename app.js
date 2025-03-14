@@ -25,16 +25,16 @@ const knightSheets = {
 };
 
 // set image sources
-knightSheets.idle.src = "/projectsoulsborne/knight/_Idle.png";
-knightSheets.crouch.src = "/projectsoulsborne/knight/_CrouchFull.png";
-knightSheets.attack1.src = "/projectsoulsborne/knight/_AttackNoMovement.png";
-knightSheets.attack2.src = "/projectsoulsborne/knight/_Attack2NoMovement.png";
-knightSheets.combo.src = "/projectsoulsborne/knight/_AttackComboNoMovement.png";
-knightSheets.jump.src = "/projectsoulsborne/knight/_JumpFallInbetween.png";
-knightSheets.slide.src = "/projectsoulsborne/knight/_SlideFull.png";
-knightSheets.death.src = "/projectsoulsborne/knight/_DeathNoMovement.png";
-knightSheets.run.src = "/projectsoulsborne/knight/_Run.png";
-knightSheets.roll.src = "/projectsoulsborne/knight/_Roll.png";
+knightSheets.idle.src = "https://raw.githubusercontent.com/sabbenthedev/projectsoulsborne/refs/heads/main/knight/_Idle.png";
+knightSheets.crouch.src = "https://raw.githubusercontent.com/sabbenthedev/projectsoulsborne/refs/heads/main/knight/_CrouchFull.png";
+knightSheets.attack1.src = "https://raw.githubusercontent.com/sabbenthedev/projectsoulsborne/refs/heads/main/knight/_AttackNoMovement.png";
+knightSheets.attack2.src = "https://raw.githubusercontent.com/sabbenthedev/projectsoulsborne/refs/heads/main/knight/_Attack2NoMovement.png";
+knightSheets.combo.src = "https://raw.githubusercontent.com/sabbenthedev/projectsoulsborne/refs/heads/main/knight/_AttackComboNoMovement.png";
+knightSheets.jump.src = "https://raw.githubusercontent.com/sabbenthedev/projectsoulsborne/refs/heads/main/knight/_Jump.png";
+knightSheets.slide.src = "https://raw.githubusercontent.com/sabbenthedev/projectsoulsborne/refs/heads/main/knight/_SlideFull.png";
+knightSheets.death.src = "https://raw.githubusercontent.com/sabbenthedev/projectsoulsborne/refs/heads/main/knight/_DeathNoMovement.png";
+knightSheets.run.src = "https://raw.githubusercontent.com/sabbenthedev/projectsoulsborne/refs/heads/main/knight/_Run.png";
+knightSheets.roll.src = "https://raw.githubusercontent.com/sabbenthedev/projectsoulsborne/refs/heads/main/knight/_Roll.png";
 
 const animationStates = [
     { name: "idle", frames: 10, stagger: 16 },
